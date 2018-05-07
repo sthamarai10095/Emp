@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="heroku_292ea0bd78efe9c" type="DataService" springFile="heroku_292ea0bd78efe9c.spring.xml">
+    <dataobjects/>
+</service>

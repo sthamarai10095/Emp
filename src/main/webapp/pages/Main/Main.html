@@ -1,9 +1,26 @@
-<wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Main">
+<wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Employee List from Heroku">
     <wm-header content="header" name="header" height="auto"></wm-header>
     <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
     <wm-content name="content">
         <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
+        <wm-page-content columnwidth="8" name="mainContent" padding="unset 15px">
+            <wm-table editmode="inline" name="EmployeeTable1" title="Employee List" dataset="bind:Variables.Heroku_292ea0bd78efe9cEmployeeData.dataSet" navigation="Basic">
+                <wm-table-column binding="empId" caption="Emp Id" generator="identity" pcdisplay="true" mobiledisplay="true" type="integer" primary-key="true" readonly="true"></wm-table-column>
+                <wm-table-column binding="empName" caption="Emp Name" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="gender" caption="Gender" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="age" caption="Age" generator="assigned" pcdisplay="true" mobiledisplay="true" type="short"></wm-table-column>
+                <wm-table-column binding="dob" caption="Dob" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date"></wm-table-column>
+                <wm-table-column binding="doj" caption="Doj" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date"></wm-table-column>
+                <wm-table-column binding="createdBy" caption="Created By" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="createdOn" caption="Created On" generator="assigned" pcdisplay="true" mobiledisplay="true" type="datetime"></wm-table-column>
+                <wm-table-column binding="modifiedBy" caption="Modified By" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="modifiedOn" caption="Modified On" generator="assigned" pcdisplay="true" mobiledisplay="true" type="datetime"></wm-table-column>
+                <wm-table-column binding="desgination" caption="Desgination" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="location" caption="Location" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-action widget-type="button" key="addNewRow" display-name="New" iconclass="wi wi-plus" show="true" class="btn-primary" action="addNewRow()" position="footer" shortcutkey=""></wm-table-action>
+                <wm-table-row-action key="updaterow" display-name="" title="Edit" iconclass="wi wi-pencil" show="true" class="btn-transparent" action="editRow()"></wm-table-row-action>
+                <wm-table-row-action key="deleterow" display-name="" title="Delete" iconclass="wi wi-trash" show="true" class="btn-transparent" action="deleteRow()"></wm-table-row-action>
+            </wm-table>
         </wm-page-content>
         <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>

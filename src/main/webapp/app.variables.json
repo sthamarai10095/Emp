@@ -34,6 +34,28 @@
     "operation" : "gotoPage",
     "pageName" : "Main"
   },
+  "goToPage_vacation" : {
+    "_id" : "wm-goToPage_vacation-wm.NavigationVariable-1525346344710",
+    "name" : "goToPage_vacation",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "vacation",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
+  "goToPage_vacation_Details" : {
+    "_id" : "wm-goToPage_vacation_Details-wm.NavigationVariable-1525340077634",
+    "name" : "goToPage_vacation_Details",
+    "owner" : "App",
+    "category" : "wm.NavigationVariable",
+    "dataBinding" : [ ],
+    "operation" : "gotoPage",
+    "pageName" : "vacation_Details",
+    "dataSet" : [ ],
+    "pageTransitions" : "none"
+  },
   "supportedLocale" : {
     "_id" : "wm-wm.Variable1402640443182",
     "name" : "supportedLocale",

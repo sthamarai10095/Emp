@@ -1,0 +1,34 @@
+{
+  "username" : "b558c34badeaf1",
+  "password" : "7b6a43524a777c433b3c667a4b5c783a172653",
+  "url" : "jdbc:mysql://us-cdbr-iron-east-04.cleardb.net:3306/heroku_292ea0bd78efe9c?useUnicode=yes&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull",
+  "driverClass" : "com.mysql.jdbc.Driver",
+  "dialect" : "com.wavemaker.runtime.data.dialect.MySQLDialect",
+  "serviceId" : "heroku_292ea0bd78efe9c",
+  "packageName" : "com.vg.emp.heroku_292ea0bd78efe9c",
+  "dbType" : "MySQL",
+  "host" : "us-cdbr-iron-east-04.cleardb.net",
+  "dbName" : "heroku_292ea0bd78efe9c",
+  "port" : "3306",
+  "schemaName" : null,
+  "tableFilter" : [ {
+    "table" : "employee",
+    "schema" : null
+  } ],
+  "schemaFilter" : [ ],
+  "impersonateUser" : false,
+  "activeDirectoryDomain" : null,
+  "hbm2ddl" : "none",
+  "maxPageSize" : 100,
+  "minPoolSize" : 2,
+  "maxPoolSize" : 4,
+  "transactionTimeout" : 30,
+  "dataSourceType" : "WM_MANAGED_DATASOURCE",
+  "jndiName" : "",
+  "reloadInfo" : {
+    "reload" : false,
+    "reason" : null,
+    "message" : null
+  },
+  "readOnly" : false
+}

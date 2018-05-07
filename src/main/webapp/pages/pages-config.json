@@ -5,7 +5,10 @@
 }, {
   "name" : "EmpList",
   "type" : "PAGE",
-  "params" : [ ]
+  "params" : [ {
+    "name" : "empId",
+    "type" : "string"
+  } ]
 }, {
   "name" : "Login",
   "type" : "PAGE",
@@ -34,4 +37,15 @@
   "name" : "topnav",
   "type" : "TOPNAV",
   "params" : [ ]
+}, {
+  "name" : "vacation",
+  "type" : "PAGE",
+  "params" : [ ]
+}, {
+  "name" : "vacation_Details",
+  "type" : "PAGE",
+  "params" : [ {
+    "name" : "empId",
+    "type" : "string"
+  } ]
 } ]

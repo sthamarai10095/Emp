@@ -1,0 +1,12 @@
+<wm-page data-ng-controller="vacation_DetailsPageController" pagetitle="Vacation Details" name="page1">
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-table name="VacationTable3" title="Vacation List" dataset="bind:Variables.HrdbVacationData11.dataSet" navigation="Classic">
+                <wm-table-column binding="startDate" caption="Start Date" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date"></wm-table-column>
+                <wm-table-column binding="endDate" caption="End Date" generator="assigned" pcdisplay="true" mobiledisplay="true" type="date"></wm-table-column>
+                <wm-table-column binding="status" caption="Status" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+                <wm-table-column binding="type" caption="Type" generator="assigned" pcdisplay="true" mobiledisplay="true" type="string"></wm-table-column>
+            </wm-table>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
