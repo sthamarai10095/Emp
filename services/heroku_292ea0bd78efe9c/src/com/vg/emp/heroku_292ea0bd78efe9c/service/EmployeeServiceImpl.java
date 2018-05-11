@@ -142,6 +142,11 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
 
+    public Employee setEmployeeDefaultValues(Employee emp){
+    	emp.setLocation("CBE");
+    	emp.setAge((short)30);
+		return emp;
+    }
 
 }
 
