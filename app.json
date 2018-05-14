@@ -1,0 +1,29 @@
+{
+  "name": "Emp",
+  "description": "This is a test Wavemaker Employee App",
+  "scripts": {
+  },
+  "env": {
+    "CLEARDB_DATABASE_URL": {
+      "required": true
+    },
+    "JAVA_OPTS": "-Xss512k -XX:+UseCompressedOops",
+    "PORT": "8080"
+  },
+  "formation": {
+    "mvn": {
+      "quantity": 1
+    },
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "cleardb"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ]
+}
