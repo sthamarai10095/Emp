@@ -141,12 +141,12 @@ public class EmployeeServiceImpl implements EmployeeService {
         return this.wmGenericDao.getAggregatedValues(aggregationInfo, pageable);
     }
 
-
     public Employee setEmployeeDefaultValues(Employee emp){
     	emp.setLocation("CBE");
     	emp.setAge((short)30);
 		return emp;
     }
+
 
 }
 

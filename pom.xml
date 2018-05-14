@@ -335,11 +335,11 @@
             <artifactId>spring-test</artifactId>
             <version>4.1.7.RELEASE</version>
         </dependency>
-        <dependency>
+        <!-- dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>4.1.7.RELEASE</version>
-        </dependency>
+        </dependency-->
         <dependency>
     		<groupId>org.hamcrest</groupId>
     		<artifactId>hamcrest-all</artifactId>
@@ -363,6 +363,11 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<!--dependency>
+    			<groupId>org.springframework</groupId>
+    			<artifactId>spring-web</artifactId>
+    			<version>4.2.4.RELEASE</version>
+			</dependency-->
 			<dependency>
 				<groupId>com.wavemaker.runtime</groupId>
 				<artifactId>wavemaker-app-runtime</artifactId>
