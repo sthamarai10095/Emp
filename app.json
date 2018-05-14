@@ -4,9 +4,7 @@
   "scripts": {
   },
   "env": {
-    "CLEARDB_DATABASE_URL": {
-      "required": true
-    },
+    "CLEARDB_DATABASE_URL":"mysql://b1673b078f00d6:38aa080b@us-cdbr-iron-east-04.cleardb.net/heroku_60f15396637209f?reconnect=true",
     "JAVA_OPTS": "-Xss512k -XX:+UseCompressedOops",
     "PORT": "8080"
   },
