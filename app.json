@@ -13,12 +13,6 @@
       "quantity": 1
     }
   },
-  "environments":
-  				{"test": 
-  					{"scripts": 
-  						{ "test": "make test" }
-  					}
-  				},
   "addons": ["cleardb"],
   "buildpacks": [{"url": "heroku/java"}]
 }
