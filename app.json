@@ -9,19 +9,16 @@
     "PORT": "8080"
   },
   "formation": {
-    "mvn": {
-      "quantity": 1
-    },
     "web": {
       "quantity": 1
     }
   },
-  "addons": [
-    "cleardb"
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/java"
-    }
-  ]
+  "environments":
+  				{"test": 
+  					{"scripts": 
+  						{ "test": "make test" }
+  					}
+  				},
+  "addons": ["cleardb"],
+  "buildpacks": [{"url": "heroku/java"}]
 }
